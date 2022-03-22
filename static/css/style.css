@@ -1183,7 +1183,7 @@ footer a {
     cursor:pointer;
 }
 
- figure .mfig{
+.mfig{
         text-align: center;
         width: 600px;
         margin-top: 10px;
@@ -1280,7 +1280,7 @@ figure.Rover.hover i {
 }
 
 @media only screen and (max-width: 600px) {
-    figure .mfig{
+    .mfig{
         text-align: center;
         width: 400px;
         margin-top: 10px;
