@@ -521,7 +521,7 @@ dl {
 }
 dt {
   font-size: 16px;
-  padding: 5px 0 10px 15px;
+  padding: 5px 0 10px 0;
   border-bottom: 1px solid rgb(0, 0, 0, 0.1);
 }
 dt span{
@@ -531,7 +531,6 @@ dt span{
 dd {
   font-size: 14px;
   font-weight: 300;
-  padding-left: 30px;
 }
 dd span{
   font-style: italic;
