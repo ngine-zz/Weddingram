@@ -1012,7 +1012,7 @@ footer a {
         border: 0;
     }
     footer{
-        display: none;
+        display: flex;
     }
 }
 
