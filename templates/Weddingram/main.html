@@ -1,0 +1,469 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block title %}
+    Weddingram
+{% endblock title %}
+
+{% block search-block %}
+<audio src="{% static '/images/DestinyOfLove.m4a' %}" class="audio" controls autoplay loop />
+{% endblock search-block %}
+
+{% block homemenu %}
+    <a href="/main/"><img src="{% static 'images/svg/home_now.svg' %}" class="home" alt=""></a>
+    <img src="{% static 'images/svg/posting.svg' %}" id="ad_fd" class="postc" alt="">
+{% endblock homemenu %}
+
+{% block main-block %}
+        <main>
+        <div class="main-sub">
+            <!-- 메인피드 영역 -->
+            <section class="main-feed">
+                <div class="wrapper">
+                    <!-- 좌측 그리드 -->
+                    <div class="left-col">
+                        <!-- 스토리 시작 -->
+                        <div class="status-wrapper">
+                            <div class="status-card">
+                                <div class="profile-pic2" onclick="document.location.href='sms:01031214123'"><img src="{% static 'images/marc_profile.png' %}" alt=""></div>
+                                <p class="s_username">신랑에게</br>문자하기</p>
+                            </div>
+                            <div class="status-card">
+                                <div class="profile-pic2" onclick="document.location.href='sms:01033546776'"><img src="{% static 'images/jane_profile.png' %}" alt=""></div>
+                                <p class="s_username">신부에게</br>문자하기</p>
+                            </div>
+                            <div class="status-card">
+                                <div class="profile-pic2" onclick="location.href='{% url 'content:location' %}'"><img src="{% static 'images/map.png' %}" alt=""></div>
+                                <p class="s_username">찾아오시는 길</p>
+                            </div>
+                            <div class="status-card">
+                                <div class="profile-pic2-off"/><img src="{% static 'images/share.png' %}" alt=""></div>
+                                <p class="s_username">카카오톡</br>공유하기</p>
+                            </div>
+                            <div class="status-card">
+                                <div class="profile-pic2-off" onclick="location.href='{% url 'content:about' %}'"><img src="{% static 'images/cat_jane_small.png' %}" alt=""></div>
+                                <p class="s_username">제작후기</p>
+                            </div>
+                            <div class="status-card">
+                                <div class="profile-pic2-off" onclick="location.href='{% url 'content:copyright' %}'"><img src="{% static 'images/copy.png' %}" alt=""></div>
+                                <p class="s_username">저작권 정보</p>
+                            </div>
+                        </div>
+                        <!-- 스토리 끝 -->
+
+                        <!-- 상단 공지 포스트 시작 -->
+                        <div class="post">
+                            <div class="info">
+                                <div class="user">
+                                    <div class="profile-pic2"><img src="{% static 'images/marcngine.jpg' %}" alt=""></div>
+                                    <p class="feed_username">marcngine</p>
+                                </div>
+                                <div class="openPopup"><img src="{% static './images/svg/options.svg' %}" alt=""></div>
+                            </div>
+                            <iframe width="100%" height="338" src="https://www.youtube.com/embed/5b35haQV7tU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="post-content">
+                                <div class="reaction-wrapper">
+                                    <img src="{% static 'images/svg/like.svg' %}" class="icon" alt="">
+                                    <img src="{% static 'images/svg/comments.svg' %}" class="icon" alt="">
+                                    <img src="{% static 'images/svg/messenger.svg' %}" class="icon" alt="">
+                                    <img src="{% static 'images/svg/saved.svg' %}" class="save icon" alt="">
+                                </div>
+                                <p class="likes">
+                                <div class="comment-wrapper">
+                                    <div class="profile-pic2"><img src="{% static 'images/marcngine.jpg' %}" alt=""></div>
+                                    <div class="subtrack"><span>marcngine</span>님 <span>외 여러 명</span>이 좋아합니다</div>
+                                </div>
+                                </p>
+                                <p class="description"><span class="writer">Weddingram</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?</p>
+                                <p class="post-time">2 minutes ago</p>
+                            </div>
+                        </div>
+                        <!-- 상단 공지 포스트 끝 -->
+
+                        <!-- 청첩장 포스트 시작 -->
+                        <div class="post">
+                            <div class="info">
+                                <div class="user">
+                                    <div class="profile-pic2"><img src="{% static 'images/weddingram_profile.png' %}" alt=""></div>
+                                    <p class="feed_username">Weddingram</p>
+                                </div>
+                                <div class="openPopup"><img src="{% static './images/svg/options.svg' %}" alt=""></div>
+                            </div>
+                            <img src="{% static 'images/wedding_invitation2.png' %}" class="post-image" alt="">
+                            <div class="post-content">
+                                <div class="reaction-wrapper">
+                                    <img src="{% static 'images/svg/like.svg' %}" class="icon" alt="">
+                                    <img src="{% static 'images/svg/comments.svg' %}" class="icon" alt="">
+                                    <img src="{% static 'images/svg/messenger.svg' %}" class="icon" alt="">
+                                    <img src="{% static 'images/svg/saved.svg' %}" class="save icon" alt="">
+                                </div>
+                                <p class="likes">
+                                <div class="comment-wrapper">
+                                    <div class="profile-pic2"><img src="{% static 'images/marcngine.jpg' %}" alt=""></div>
+                                    <div class="subtrack"><span>marcngine</span>님 <span>외 여러 명</span>이 좋아합니다</div>
+                                </div>
+                                </p>
+                                <p class="description"><span class="writer">Weddingram</span><br>
+                                    내 그대를 생각함은<br>
+                                    항상 그대가 앉아 있는 배경에서<br>
+                                    해가 지고 바람이 부는 일처럼 사소한 일일 것이나<br>
+                                    언젠가 그대가<br>
+                                    한없이 괴로움 속을 헤매일 때에<br>
+                                    오랫동안 전해 오던 그 사소함으로<br>
+                                    그대를 불러보리라.<br><br>
+                                    초여름이 시작되는 2022년 6월 11일, 토요일 정오.<br>
+                                    의정부 서계종택에서 부부의 연을 맺어 같은 곳을 바라보려 합니다.<br>
+                                    시작의 한 걸음, 멀리서라도, 마음만이라도 함께 축복해 주시면 감사드리겠습니다.
+                                </p>
+                                <p class="post-time">2022.06.11</p>
+                            </div>
+                        </div>
+                        <!-- 청첩장 포스트 끝 -->
+
+                        {% for feed in feed_list %}
+                        <!-- 피드 포스트 시작 -->
+                        <div class="post">
+                            <div class="info">
+                                <div class="user">
+                                    <div class="profile-pic2"><img src="{% static 'images/weddingram_profile.png' %}" alt=""></div>
+                                    <p class="feed_username">Weddingram</p>
+                                </div>
+                                <div class="openPopup"><img src="{% static 'images/svg/options.svg' %}" alt=""></div>
+                            </div>
+                            <img src="{% get_media_prefix %}{{ feed.image }}" class="post-image" alt="">
+                            <div class="post-content">
+                                <div class="reaction-wrapper">
+                                    <img src="{% static 'images/svg/like.svg' %}" class="icon" alt="">
+                                    <img src="{% static 'images/svg/comments.svg' %}" class="icon" alt="">
+                                    <img src="{% static 'images/svg/messenger.svg' %}" class="icon" alt="">
+                                    <img src="{% static 'images/svg/saved.svg' %}" class="save icon" alt="">
+                                </div>
+                                <p class="likes">
+                                    <div class="comment-wrapper">
+                                        <div class="profile-pic2"><img src="{% static 'images/weddingram_profile.png' %}" alt="/"></div>
+                                        <div class="subtrack"><span>Weddingram</span>님 <span>외 1명</span>이 좋아합니다</div>
+                                    </div>
+                                </p>
+                                <p class="description"><span class="writer">feed id</span>
+                                    {{ feed.content|linebreaksbr }}
+                                </p>
+                                <p class="tag">
+                                    {{ feed.tag }}
+                                </p>
+                                <p>
+                                    <div id="reply_list_{{ feed.id }}">
+                                        {% for reply in feed.reply_list %}
+                                            <div class="dep2"><span class="writer">{{ reply.writer_id }}</span> {{ reply.comment }}</div>
+                                        {% endfor %}
+                                    </div>
+                                </p>
+                                <p class="post-time">{{ feed.write_date }}</p>
+                            </div>
+                            <div class="comment-write">
+                                <img src="{% static 'images/svg/smile.svg' %}" class="icon" alt="">
+                                <input id="name_{{ feed.id }}" type="text" class="name-box" placeholder="이름">
+                                <input id="reply_{{ feed.id }}" type="text" class="comment-box" placeholder="댓글 달기...">
+                                <button feed_id="{{ feed.id }}" style="width:40px;height:100%;font-weight:500;background:none;border:none;outline:none;text-transform:capitalize;font-size:14px;text-align:center;color:rgb(0, 162, 255);opacity:1;cursor:pointer;" class="upload_reply">게시</button>
+                            </div>
+                        </div>
+                        <!-- 피드 포스트 끝 -->
+                        {% endfor %}
+
+                    </div>
+                    <!-- 우측 그리드 -->
+                    <div class="right-col">
+                        <!-- 프로필 영역 -->
+                        <div class="cardarea">
+                            <div class="image">
+                                <img src="{% static 'images/weddingram_profile.png' %}" alt="">
+                            </div>
+                            <div class="center">
+                                <p class="username">Weddingram</p>
+                                <p class="sub-text_o">2022.06.11(Sat), 12 P.M.</p>
+                            </div>
+                        </div>
+                        <!-- 추천 영역 -->
+                        <p class="suggestion-text">회원님을 위한 추천</p>
+                        <div class="profile-card">
+                            <div class="image2">
+                                <img src="{% static 'images/marcngine.jpg' %}" title="marcngine님의 프로필사진" alt="">
+                            </div>
+                            <div class="center2">
+                                <p class="username">marcngine</p>
+                                <p class="sub-text">_your_jane님이 팔로우합니다</p>
+                            </div>
+                            <div class="right"><button class="action-btn"><a href="https://www.instagram.com/marcngine/" target="_blank">방문</a></button></div>
+                        </div>
+                        <div class="profile-card">
+                            <div class="image2">
+                                <img src="{% static 'images/your_jane.jpeg' %}" title="_your_jane님의 프로필사진" alt="">
+                            </div>
+                            <div class="center2">
+                                <p class="username">_your_jane</p>
+                                <p class="sub-text">marcngine님이 팔로우합니다</p>
+                            </div>
+                            <div class="right"><button class="action-btn"><a href="https://www.instagram.com/_your_jane/" target="_blank">방문</a></button></div>
+                        </div>
+                        <!-- 푸터 영역 -->
+                        <footer>
+                        {% endblock main-block %}
+                        {% block footer %}
+                        </footer>
+                    </div>
+                    <!-- 우측 그리드 끝 -->
+                </div>
+            </section>
+        </div>
+        </main>
+        {% endblock footer %}
+
+        {% block modal-block %}
+        <!-- 포스팅 모달 -->
+        <div id="md_ad_fd" class="modal m_overlay">
+            <div class="m_window">
+                <div class="modal_title">
+                    <div class="modal_title_side"></div>
+                    <div> 새 포스팅 </div>
+                    <div class="modal_title_side">
+                        <span id="close_modal" class="close_modal" style="font-size: 10px">
+                            close
+                        </span>
+                    </div>
+                </div>
+                <div class="modal_image_upload">
+                    <span style="text-align: center"> 사진을 여기에 끌어다 놓으세요. </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal_add_feed_content" class="modal modal_overlay_content">
+            <div class="m_window">
+                <div class="modal_title">
+                    <div class="modal_title_side"></div>
+                    <div style="margin:5px"> 새 포스팅 </div>
+                    <div class="modal_title_side">
+                        <span id="close_modal" class="close_modal" style="font-size:10px">
+                            close
+                        </span>
+                    </div>
+                </div>
+                <div class="modal_image_content">
+                    <div id="input_image" class="modal_image_upload_content">
+
+                    </div>
+                    <div class="modal_content_write">
+                        <div class="feed_name">
+                            <div class="profile_box">
+                                <img id="input_profile_image" class="profile_img" src="{% static 'images/weddingram_profile.png' %}" style="width:24px;height:24px;" alt="">
+                            </div>
+                            <span id="input_user_id" class="feed_name_txt">Marc</span>
+                        </div>
+                        <div style="height: 345px">
+                            <textarea id="input_content" class="feed_content_textarea" rows="20" placeholder="설명을 입력하세요..."></textarea>
+                        </div>
+                        <div style="height: 100px">
+                            <textarea id="input_tag" class="feed_content_textarea" rows="5" placeholder="태그를 입력하세요..."></textarea>
+                        </div>
+                        <div style="width: 100%; text-align: center">
+                            <button id="button_write_feed" type="button" class="btn btn-primary" style="width: 268px"> 작성하기</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 포스팅 모달 끝 -->
+
+        <!-- 옵션팝업 -->
+        <div id="popup">
+            <div id="popup_g">
+                <div id="modal">
+                    <button id="m_btn1" tabindex="0" onclick="ale1()">신고</button>
+                    <button id="m_btn2" tabindex="1" onclick="ale2()">팔로우 취소</button>
+                    <button id="m_btn3" tabindex="2" class="close">취소</button>
+                </div>
+            </div>
+        </div>
+
+        {% endblock modal-block %}
+
+        {% block script-block %}
+        <script>
+
+            $(".upload_reply").click(function (event){
+                let feed_id = event.target.attributes.getNamedItem('feed_id').value;
+                let reply_id = 'reply_' + feed_id;
+                let name_id = 'name_' + feed_id;
+                let writer_id = $('#'+name_id).val();
+                let comment = $('#'+reply_id).val();
+
+                if(comment.length <= 0){
+                    alert("댓글을 입력하세요");
+                    return 0;
+                }
+
+                if(writer_id.length <= 0){
+                    alert("이름을 입력하세요");
+                    return 0;
+                }
+
+                $.ajax({
+                url: "/content/reply",
+                data: {
+                    feed_id : feed_id,
+                    writer_id : writer_id,
+                    comment : comment
+                },
+                method: "POST",
+                success: function (data) {
+                    console.log("댓글성공");
+                    $("#reply_list_"+feed_id).append("<div class='dep2'>👏 <span class='writer'>" + writer_id + "</span> " + comment + " </div>")
+                    {#location.replace('/main');#}
+                },
+                error: function (request, status, error) {
+                    console.log("댓글에러");
+                },
+                complete: function() {
+                    console.log("완료");
+                    $('#'+reply_id).val('');
+                    $('#'+name_id).val('');
+                }
+            });
+
+            });
+
+        const md = document.getElementById("md_ad_fd");
+        const buttonAddFeed = document.getElementById("ad_fd");
+        buttonAddFeed.addEventListener("click", e => {
+            md.style.top = window.pageYOffset + 'px'; // top을 이용해 시작 y위치를 바꿔줌
+            md.style.display = "flex";
+            document.body.style.overflowY = "hidden"; // 스크롤 없애기
+        });
+
+        // 모달 닫기 코드
+        const buttonCloseModal = document.getElementById("close_modal");
+        buttonCloseModal.addEventListener("click", e => {
+            md.style.display = "none";
+            document.body.style.overflowY = "visible";
+        });
+
+        <!-- jquery 부분 -->
+        $('.close_modal').on("click", () => {
+            closeModal();
+        });
+
+        function closeModal() {
+            $('.modal').css({
+                display : 'none'
+            });
+            $(document.body).css({
+                overflowY : 'visible'
+            });
+        };
+
+        $('.modal_image_upload')
+            .on("dragover", dragOver)
+            .on("dragleave", dragOver)
+            .on("drop", uploadFiles);
+
+        function dragOver(e){
+            e.stopPropagation();
+            e.preventDefault();
+
+            if (e.type == "dragover") {
+                $(e.target).css({
+                    "background-color": "black",
+                    "outline-offset": "-20px"
+                });
+            }
+            else {
+                $(e.target).css({
+                    "background-color": "white",
+                    "outline-offset": "-10px"
+                });
+            }
+        }
+
+        function uploadFiles(e){
+            e.stopPropagation();
+            e.preventDefault();
+            console.log(e.dataTransfer)
+            console.log(e.originalEvent.dataTransfer)
+
+            e.dataTransfer = e.originalEvent.dataTransfer;
+
+            files = e.dataTransfer.files;
+            if (files.length > 1) {
+                alert('하나만 올려라.');
+                return;
+            }
+
+            if (files[0].type.match(/image.*/)) {
+                $('#modal_add_feed_content').css({
+                    display : 'flex'
+                });
+                $('.modal_image_upload_content').css({
+                    "background-image": "url(" + window.URL.createObjectURL(files[0]) + ")",
+                    "outline": "none",
+                    "background-size": "cover",
+                    "background-repeat" : "no-repeat",
+                    "background-position" : "center",
+                });
+                $('#md_ad_fd').css({
+                    display: 'none'
+                });
+            }
+            else{
+                alert('이미지가 아닙니다.');
+                return;
+            }
+        };
+
+        $('#button_write_feed').on('click', ()=>{
+            const image = $('#input_image').css("background-image").replace(/^url\(['"](.+)['"]\)/, '$1');
+            const content = $('#input_content').val();
+            const tag = $('#input_tag').val();
+
+            const file = files[0];
+
+            let fd = new FormData();
+
+            fd.append('file', file);
+            fd.append('image', image);
+            fd.append('content', content);
+            fd.append('tag', tag);
+
+            if(image.length <= 0)
+            {
+                alert("이미지가 비어있습니다.");
+            }
+            else if(content.length <= 0)
+            {
+                alert("설명을 입력하세요");
+            }
+            else if(tag.length <= 0)
+            {
+                alert("태그가 없습니다.");
+            }
+            else{
+                writeFeed(fd);
+                console.log(files[0]);
+            }
+        });
+
+        function writeFeed(fd) {
+            $.ajax({
+                url: "/content/upload",
+                data: fd,
+                method: "POST",
+                processData: false,
+                contentType: false,
+                complete: function() {
+                    console.log("무조건실행");
+                    closeModal();
+                    location.reload();
+                }
+            });
+        }
+        </script>
+        {% endblock script-block %}

@@ -1,0 +1,244 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block title %}
+    Weddingram
+{% endblock title %}
+
+{% block search-block %}
+<div class="search-guide">
+  <span class="search-icon"></span>
+  <input type="text" class="search-placeholder" value="검색" onfocus="if (this.value == '검색') {this.value = '';}" onblur="if (this.value == '') {this.value = '검색';}">
+</div>
+{% endblock search-block %}
+
+{% block homemenu %}
+<a href="/main/"><img src="{% static 'images/svg/home.svg' %}" id="ad_fd" class="postc" alt=""></a>
+{% endblock homemenu %}
+
+{% block main-block %}
+    <main>
+      <div class="main-sub">
+        <header>
+          <div class="header-grid">
+            <div class="profile-pic">
+              <img src="{% static 'images/weddingram_profile.png' %}" />
+            </div>
+            <div class="profile-info">
+              <div class="title">
+                <h2>Weddingram</h2>
+                <span class="verified-icon"></span>
+                <button class="primary">verified</button>
+              </div>
+              <div class="desktop-only">
+                <div class="details">
+                  <ul>
+                    <li>게시물 <span>42</span></li>
+                    <li class="openPopupFollower">팔로워 <span>6.11m</span></li>
+                    <li class="openPopupFollow">팔로우 <span>2</span></li>
+                  </ul>
+                </div>
+                <div class="description row last">
+                    <h1>WEDDINGRAM 🤵👰‍♀️</h1>
+                      <span>
+                        🗓️ 2022년 6월 11일, 🕛 12시 정각<br>
+                        📌 의정부 서계종택 <a href="http://naver.me/GfaMZNkI" class="pd" target="_blank">naver.me/GfaMZNkI</a>
+                      </span>
+                      <div class="pds"><a href="https://www.instagram.com/marcngine/" target="_blank" style="color: #000;font-weight:500;">marcngine</a>님과
+                         <a href="https://www.instagram.com/_your_jane/" target="_blank" style="color: #000;font-weight:500;">_your_jane</a>님이 팔로우합니다.</div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 프로필 설명 영역 모바일 화면 -->
+          <div class="profile-info mobile-only">
+            <div class="description row">
+             <h1>WEDDINGRAM 🤵👰‍♀️</h1>
+                  <span>
+                    🗓️ 2022년 6월 11일, 🕛 12시 정각<br>
+                    📌 의정부 서계종택 <a href="http://naver.me/GfaMZNkI" class="pd" target="_blank">naver.me/GfaMZNkI</a>
+                  </span>
+                  <div class="pds"><a href="https://www.instagram.com/marcngine/" target="_blank" style="color: #000;font-weight:500;">marcngine</a>님과
+                     <a href="https://www.instagram.com/_your_jane/" target="_blank" style="color: #000;font-weight:500;">_your_jane</a>님이 팔로우합니다.</div>
+                </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- 프로필 갤러리 -->
+        <div class="b_contents">
+            <h1>Weddingram 소개</h1>
+            <dl>
+              <!-- 음악 -->
+              <dt>시작하면서...</dt>
+                  <dd>
+                    <p style="margin-top:15px;">
+                    <figure style="text-align: center;">
+                        <img src="{% static 'images/cat_jane.png' %}" style="height:300px;margin-top:10px;border: 1px solid #ececec;border-radius: 50%;">
+                        <figcaption style="color:rgba(200, 200, 200);font-size:11px;text-align: center;">우리 Jane이(노르웨이숲, 여, 방년 6세)</figcaption>
+                      </figure><br><br>
+                      만들고 나니 나름 많은 공을 들였음에도 이렇게나 부족한 사이트였나 싶긴 하지만, 심적으론 너무나 촉박했던 4개월여였습니다.<br><br>
+
+                      작년말부터 결혼을 준비하면서 반복적으로 제희에게 했던 말이 있는데, <span>'무리가 되지 않는 선에서 하고 싶은 대로 다해~'</span> 였습니다. 일평생 한 번 밖에 없는 결혼식인데 신부의 니즈가 가장 중요하다고 생각하기도 했고, 취향이 확고한 분이라 괜한 저의 입김이 닿아서 망치는 것도 별루였구요.<br>
+                      <font class="appeal">그리고 전 사실 그때부터 오로지 프로포즈만 생각하고 있었습니다 -_-</font><br>
+                      <figure style="text-align: center;">
+                        <img src="{% static 'images/gallery/pro_2.jpeg' %}" style="height:400px;margin-top:10px;">
+                        <figcaption style="color:rgba(200, 200, 200);font-size:11px;text-align: center;">제가 웨딩드레스를 입을 순 없자나여...</figcaption>
+                      </figure><br><br>
+
+                      당연히 남들과는 다른 프로포즈를 하고 싶다는 욕구가 제일 컸구요. <br>
+                      결혼을 한다는 걸 주변에 알리고 축하를 받는 과정에서 보다 손쉽게 남들에게 우리를, 우리의 만남을, 그리고 결혼을 설명할 수 있으면 더 좋겠다는 욕심.
+                      <br><span><font class="appeal">그리고 압도적으로 칭찬받고 싶다.</font></span><br>
+                      <figure style="text-align: center;">
+                        <img src="{% static 'images/gallery/pro_1.png' %}" style="height:400px;margin-top:10px;">
+                        <figcaption style="color:rgba(200, 200, 200);font-size:11px;text-align: center;">제 목푭니다. 여러분</figcaption>
+                      </figure><br>
+
+                      무엇보다 단 한 번의 이벤트로 스쳐 지나가는 그런 프로포즈는 너무 별루라고 생각했어요. <br>
+                      <span><font class="appeal">둘 모두 기억에 남고, 먼 훗날 다시 돌이켜보고 싶을 때도 확인 가능한 그런 프로포즈.<br>
+                      우리 아이가 '엄마 아빠는 어떻게 만나고, 어떻게 결혼 했어?' 라고 물었을 때 보여주고 답해줄 수 있는 무언가</font></span>가 프로포즈였으면 좋겠다고 생각했습니다.
+                      그와 동시에 제가 가진 탈렌트들을 모두 최대로 이끌어내야지만 할 수 있는 그런 '정성'과 '노오력'이 담긴 프로포즈였으면 했습니다.<br>
+                      때문에 이 프로포즈는 제가 지난 20여 년간 보고 익힌 모든 것들을 총망라하는 자리이자, 그간 부족한 부분을 배워보는 프로젝트이기도 했습니다.<br><br>
+
+                      원래 하려고 했던 건 영상을 만들어서 보여주는 것이었는데요.<br>
+                      이런 프로포즈 영상의 절박함<font class="grey">(?)</font>과 감동<font class="grey">(?)</font>은 아무리 생각해도 <a href="https://www.youtube.com/watch?v=aqOWksp9ao0" target="_blank">스위티님을 제가 뛰어 넘을 수 없</a>......<br>
+                      <font class="grey">여친도 이 영상을 보면서 남일이지만 얼마나 감동스러워하던지.... 난 이미 글렀어... 안될꺼야<br>
+                      <s>아니 결혼 전에 남들 프로포즈 영상은 왜 그리 보는지... 나에게 주는 무언의 시그널?</s></font><br><br>
+                      
+                      그 다음 생각은 전문가에게 맡겨 '짧은 애니메이션'을 만들자!였습니다.<br>
+                      저희 러브 스토리가 흔치 않다는 이야기를 주변에서 많이 들어서요. <font class="grey">(자뻑)</font><br>
+                      우리 이야기를 신카이 마코토 같은 느낌으로 만들면 좋겠다 싶었는데...<br>
+                      <figure style="text-align: center;">
+                        <img src="{% static 'images/gallery/sm_1.gif' %}" style="height:300px;margin-top:10px;">
+                        <figcaption style="color:rgba(200, 200, 200);font-size:11px;text-align: center;">사람의 욕심은 끝이 없고...</figcaption>
+                      </figure>
+                      <figure style="text-align: center;">
+                        <img src="{% static 'images/gallery/sm_4.gif' %}" style="height:300px;margin-top:10px;">
+                        <figcaption style="color:rgba(200, 200, 200);font-size:11px;text-align: center;">꿈도 크지... 이걸?</figcaption>
+                      </figure>
+                      <br>
+                      
+                      결혼에 이렇게 돈이 많이 들 줄이야..... <font class="grey">(한숨)</font><br>
+                      <font class="grey">언젠가 돈 많이 벌면 반드시 단편 애니화하고 말거야...</font><br><br>
+
+                      계속되는 고민 중에 누군가가 이쁘게 만들어 주는 것도 좋지만,
+                      좀 서툴러도 저의 정성<font class="grey">(이라고 쓰고 노가다라고 읽는다)</font>으로 만드는 게 더 감동적이지 않을까? 라는 생각이 짙어졌고
+                      <span><font class="appeal">영상을 만들고 그걸 담은 웹사이트를 만들고 그걸 프로포즈하는 날 광고로 인스타 Feed에 띄워서 보게 만든다면</font></span> 감동적이지 않을까?라고 제 머릿속이 말하자 '그럼 이번 기회에 내가 부족한 부분까지 배워보자!'라고 제 열정이 답해버렸습니다. <br><br>
+
+                      <figure style="text-align: center;">
+                        <img src="{% static 'images/gallery/pro_3.jpeg' %}" style="height:300px;margin-top:10px;">
+                        <figcaption style="color:rgba(200, 200, 200);font-size:11px;text-align: center;">(...)</figcaption>
+                      </figure><br>
+                      <br></dd>
+                    <dt>소회</dt>
+                      <dd>
+                        <p style="margin-top:15px;">
+
+                        현재는 <u>기획</u>을 주 업무로 삼고 있긴 하지만 <br>
+                        사회생활의 시작은 <u>디자이너</u>로 시작했고,<br>
+                        제일 오래 했고 잘했던 건 <u>마케터</u>였으며,<br>
+                        전직 <u>파워블로거</u>이자 대기업들의 소셜미디어 채널들을 오랜동안 운영했고,<br>
+                        잠깐이나마 홍보회사를 다녔던 세상에 흔치 않은 <font class="appeal">제너럴리스트</font>로서<sup class="sup">1)</sup><br><br>
+
+                      
+                      프로포즈 사이트를<br>
+                      <span>1) 어떻게 만들지 계획을 세우고 (기획)<br>
+                      2) 실제로 디자인 및 구축한 후에 (디자인, 퍼블리싱, 개발 및 배포)<br>
+                      3) 스토리텔링을 가미한 콘텐츠 플랜을 세우고 직접 제작(영상 등)하고 (콘텐츠 전략 수립 및 개발)<br>
+                      4) 광고를 통해 원하는 타겟(제희)에게 노출하고 (맞춤형 광고)<br>
+                      5) 이를 어떻게 장/단기적으로 운영/활용할지 (운영)</span><br>
+                      하는 일련의 과정을 <font class="appeal">다른 사람은 몰라도 난 할 수 있지 않나?</font> 싶더라구요.<br><br>
+
+                      인스타그램을 기준으로 만든 건 클론 코딩 자료가 많아 레퍼런스가 많은 점도 있었지만,
+                      무엇보다 여친이! <font class="grey">(이제 예신이자 곧 와이프)</font>이 유일하게 쓰는 SNS가 인스타그램이어서였습니다.
+                      인스타그램의 피드를 우리의 이야기로 하나씩 콘텐츠로 채우면 멋지겠다!<font class="grey">(라고 쓰고 감동적이겠군!이라고 읽는다)</font>라고 생각했었어요. 
+                      때문에 모양새는 인스타그램과 유사하지만, 실제로 기능적인 부분들은 조금 다르게 만들었습니다. <font class="grey">(프로필 영역은 항상 웨딩그램이 뜬다던가 등)</font><br><br>
+
+                      처음에는 그냥 하드코딩으로 html 페이지를 만들어 띄우는 정도를 목표로 시작했습니다.<br>
+                      그런데 하면 할수록 욕심이 생기더라구요.<br><br>
+
+                      <span>'기왕 만드는 거 청첩장 역할까지 대신하면 좋지 않을까?'<br>
+                      '포스팅마다 댓글이 달리면 더 좋지 않을까?'<br>
+                      '실물 청첩장에 QR코드를 넣어서 접속하게 만들면 어떨까? (웨딩의 O2O -_-)'<br><br></span>
+                      
+                      그렇게 겁 없이 시작한 프로젝트건만 하면 할수록 깨달았습니다.<br>
+                      영상편집, 캘리그래피, 캐릭터 드로잉, 프로크리에이트, 루마퓨전, 비주얼 스튜디오 코드, 파이썬, 파이참, Django, AWS 모두 다 처음인데...<br>
+                      <span>해버렸네?</span><br>
+                      어캐 이렇게 다 해버릴 수 있지???<br>
+                      아아... 난 진정 <font class="appeal">&lt;강조&gt;만능캐&lt;/강조&gt;</font>였던 것인가!!<br><br>
+                      
+                      농담이었고요.<br>
+                      웹디자이너이던 시절<font class="grey">(어언 20년 전...)</font> 위지웍에디터를 쓰지 않고 하드코딩하던 유저라서<font class="grey">(메모장, 에디트플러스)</font> 기본적인 html의 문법은 이해하고 있던 지라 덜컥 시작했던 것 같아요. 또 구글과 유투브는 저 같은 초보도 '노오력'을 가미하면 할 수 있게 많은 정보와 소스들이 오픈되어 있었습니다.<br><br>
+
+                      <font style="font-style: italic;color:darkgrey">22년 1월 1일부터 Python과 Django를 맨땅에서 따라 하고, 코드잇에 등록해서 html/CSS의 기초를 다시 배우고, 깃과 깃허브의 사용법을 익히고, 터미널의 사용법을 첨부터 배워나가기 시작했습니다.
+                      동시에 아이패드 프로크리에이트 사용법을 익히면서 직접 하나하나 그림들을 그렸고, 루마퓨전으로 동영상을 어떻게 만드는지 출퇴근길에 계속 공부했습니다.
+                      중간중간 캘리그래피 연습도 하구요, 제 스타일에 맞는 브러시들도 일일이 다 구매해서 테스트해보면서 찾았습니다.
+                      비슷한 폰트들을 찾아 헤맸고, 모든 브라우저마다 제대로 반응형으로 보이는지 확인도 하고,
+                      애니메이션은 어떻게 영상으로 만드는지도 보고,
+                      수차례 실패해가며 한 장면씩 만들어 나갔습니다.
+                      영상에 들어갈 음원 저작권 문제를 풀기 위해 음원 사용 계약을 맺고, 필요한 경우 소속사에 메일도 보냈습니다.
+                      정작 다 만들고 나니 Django의 DB는 로컬이 아닌 웹서버에서 못 쓴대서 한참을 헤맸습니다.
+                      기존에 만든 서비스들이 돌아갈 수 있는 AWS를 신청하고 도메인을 구매해서 연결하고
+                      혹시 누가 공유해줄까봐 (-_-) 카톡 공유하기도 넣고, OG image 셋팅도 하고
+                      축의금은 받아야지 싶어서 카카오페이 연결하고
+                      그래도 간단하게나마 통계는 봐야지 싶어서 GA(Google Analytics)까지 셋팅하는 모든 과정이 진짜 눈 깜작할 사이에 지나가 버렸네요.</font><br><br>
+
+                        아쉬운 부분이 너무 많지만, 그 중에서도 가장 아쉬운건 입장할 때 부터 닉네임을 받아서 댓글 쓸때 일일이 이름을 쓰지 않도록 하려고 간단한 회원가입 체계를 만들었었는데,
+                            계속 오류는 나는데, 시간은 계속 흘러가고... 결국 눈물을 머금고 포기했습니다. <br><br>
+
+                             영상은 주로 프로크리에이트로 밑작업을 하고 루마퓨전으로 만들었는데, 진짜 하면 할수록 영상은 편집이 다하는군요...
+                            별 것 아닌 것 같은 장면도 컷들 맞추는게 의외로 빡셨고, 전 거기다가 음악과 스토리라인을 맞추려다 보니 시간은 촉박한데 요구되는 화면은 점점 늘어나고....
+                            정말 눙물이 앞을 가리더라구요.<br><br>
+
+                      무엇보다 결혼을 앞두고 사실상 같이 살고 있어서, 안 들켜야한다는 어려움이 제일 컸....<br><br>
+
+                      나름 열심히 했지만 당연히 제대로 된 사이트는 아닐뿐더러, 100% 다 이해하고 만들었다고 말할 순 없습니다.<br>
+
+                      하지만 지난 몇 개월 동안, 모르던 걸 조금이나마 배워가던 시간들이 너무 알찼고,
+                      <font class="appeal">그간 찍은 우리의 사진도 처음 부터 다시 보고, 그때 무슨 일이 있었는지 기억도 되살려보고, 하나씩 준비해 나가던 지난 4개월이 너무 소중하고 즐거웠습니다.</font>
+                      </p>
+                  <br><br>
+                  </dd>
+
+                  <dd><hr style="border:1px solid #ececec"></dd>
+                  <dd>
+                    <p style="margin:5px 15px;"><sup class="sup">1)</sup> 문창연 포트폴리오 : <a href="https://www.marcmoon.kr" target="_blank" class="pd">www.marcmoon.kr</a></p>
+                  <br><br>
+                  </dd>
+                  <!-- 폰트 -->
+                <dt>Thanks to</dt>
+                  <dd><br></dd>
+                  <dd><span>mychew_</span></dd>
+                  <dd>
+                    <p style="margin:5px 15px;">html과 CSS는 구글링을 통해 여기저기 많이 참고했구요. Django는 mychew님의 <a href="https://www.youtube.com/c/mychew" target="_blank">유투브</a> 강좌와 <a href="https://cholol.tistory.com" target="_blank">블로그</a>를 엄청나게 참고 했습니다. 열댓번은 따라 만들어본 것 같아요<font class="grey">(그러고도 이해를 다 못했지만...)</font>
+                    특히 Ajax로 화면 전환 없이 댓글 추가되게 만드는 건 정말 여기 아니었음 못했...<br><br>
+                  </dd>
+                  <dd><span>이연LEEYEON</span></dd>
+                  <dd>
+                    <p style="margin:5px 15px;">프로크리에이트는 유투브에서 스킬, 항목별로 많이 봤습니다만 전체적으론 <a href="https://www.youtube.com/c/leeyeon" target="_blank">이연님의 유투브</a>가 많은 도움이 되었습니다.<br><br>
+                  </dd>
+
+                <!-- 기타 -->
+                <dt>사용툴</dt>
+                  <dd><br>
+                     디자인: 포토샵(Mac, iPad)<br>
+                     드로잉 & 캘리그래피: 프로크리에이트(iPad)<br>
+                     영상편집: 루마퓨전(iPad)
+                     <br><br></dd>
+                  </dd>
+            </dl>
+        </div>
+
+        <!-- 푸터 영역 -->
+        <div class="p-footer">
+          <footer>
+            {% endblock main-block %}
+
+            {% block footer %}
+          </footer>
+        </div>
+
+      </div>
+    </main>
+{% endblock footer %}

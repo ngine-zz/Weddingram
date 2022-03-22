@@ -1,0 +1,517 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block title %}
+    Weddingram(@weddingram)
+{% endblock title %}
+
+{% block search-block %}
+<div class="search-guide">
+  <span class="search-icon"></span>
+  <input type="text" class="search-placeholder" value="검색" onfocus="if (this.value == '검색') {this.value = '';}" onblur="if (this.value == '') {this.value = '검색';}">
+</div>
+{% endblock search-block %}
+
+{% block homemenu %}
+<a href="/main/"><img src="{% static 'images/svg/home.svg' %}" id="ad_fd" class="postc" alt=""></a>
+{% endblock homemenu %}
+
+{% block main-block %}
+    <main>
+      <div class="main-sub">
+        <header>
+          <div class="header-grid">
+            <div class="profile-pic">
+              <img src="{% static 'images/weddingram_profile.png' %}" />
+            </div>
+            <div class="profile-info">
+              <div class="title">
+                <h2>Weddingram</h2>
+                <span class="verified-icon"></span>
+                <button class="primary">verified</button>
+              </div>
+              <div class="desktop-only">
+                <div class="details">
+                  <ul>
+                    <li>게시물 <span>42</span></li>
+                    <li class="openPopupFollower">팔로워 <span>6.11m</span></li>
+                    <li class="openPopupFollow">팔로우 <span>2</span></li>
+                  </ul>
+                </div>
+                <div class="description row last">
+                  <h1>WEDDINGRAM 🤵👰‍♀️</h1>
+                  <span>
+                    🗓️ 2022년 6월 11일, 🕛 12시 정각<br>
+                    📌 의정부 서계종택 <a href="http://naver.me/GfaMZNkI" class="pd" target="_blank">naver.me/GfaMZNkI</a>
+                  </span>
+                  <div class="pds"><a href="https://www.instagram.com/marcngine/" target="_blank" style="color: #000;font-weight:500;">marcngine</a>님과
+                     <a href="https://www.instagram.com/_your_jane/" target="_blank" style="color: #000;font-weight:500;">_your_jane</a>님이 팔로우합니다.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 프로필 설명 영역 모바일 화면 -->
+          <div class="profile-info mobile-only">
+            <div class="description row">
+              <h1>WEDDINGRAM 🤵👰‍♀️</h1>
+              <span>
+                🗓️ 2022년 6월 11일, 🕛 12시 정각<br>
+                📌 의정부 서계종택 <a href="http://naver.me/GfaMZNkI" class="pd" target="_blank">naver.me/GfaMZNkI</a>
+              </span>
+              <div class="pds"><a href="https://www.instagram.com/marcngine/" target="_blank" style="color: #000;font-weight:500;">marcngine</a>님과
+                 <a href="https://www.instagram.com/_your_jane/" target="_blank" style="color: #000;font-weight:500;">_your_jane</a>님이 팔로우합니다.</div>
+            </div>
+          </div>
+        </header>
+
+        <div class="desktop-only">
+          <div class="tabs">
+            <div class="tab-item active">
+              <img src="{% static 'images/svg/posts.svg' %}" alt="">
+              <span>게시물</span>
+            </div>
+            <div class="tab-item">
+              <img src="{% static 'images/svg/video.svg' %}" alt="">
+              <span>동영상</span>
+            </div>
+            <div class="tab-item last">
+              <img src="{% static 'images/svg/tagged.svg' %}" alt="">
+              <span>태그됨</span>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-tabs mobile-only">
+          <ul>
+            <li>
+              게시물
+              <div>42</div>
+            </li>
+            <li class="openPopupFollower">
+              팔로워
+              <div>6.11m</div>
+            </li>
+            <li class="openPopupFollow">
+              팔로우
+              <div>2</div>
+            </li>
+          </ul>
+          <div class="actions">
+            <img src="{% static 'images/svg/posts-color.svg' %}" alt="">
+            <img src="{% static 'images/svg/video-24.svg' %}" alt="">
+            <img src="{% static 'images/svg/tagged-24.svg' %}" alt="">
+          </div>
+        </div>
+        <!-- 프로필 갤러리 -->
+      
+        <div class="gallery">
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/0-1.png' %}" />
+              <figcaption>
+                <h3></h3>
+                <p></p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/0-2.png' %}" />
+              <figcaption>
+                <h3></h3>
+                <p></p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/0-3.png' %}" />
+              <figcaption>
+                <h3></h3>
+                <p></p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/0-4.png' %}" />
+              <figcaption>
+                <h3></h3>
+                <p></p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/0-5.png' %}" />
+              <figcaption>
+                <h3></h3>
+                <p></p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/0-6.png' %}" />
+              <figcaption>
+                <h3></h3>
+                <p></p>
+              </figcaption>
+            </figure>
+          </div>
+          <!-- 구분 -->
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/17.png' %}" />
+              <figcaption>
+                <h3>미묘</h3>
+                <p>그냥 우리 고양이 자랑...</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/1.png' %}" />
+              <figcaption>
+                <h3>블로그</h3>
+                <p>그녀를 처음 만난 곳이자 우울했던 나의 지난 날들</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/2.png' %}" />
+              <figcaption>
+                <h3>드레스투어</h3>
+                <p>리액션이 약하다고 말하셨지만, 난 바뻤다고...</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/3.png' %}" />
+              <figcaption>
+                <h3>오늘의 브런치</h3>
+                <p>잘 익은 아보카도와 레드페퍼, 필라델피아 크림치즈라면 늦은 일요일 점심 준비 끝</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/18.png' %}" />
+              <figcaption>
+                <h3>Jeju</h3>
+                <p>우리의 첫 제주 여행</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/30.png' %}" />
+              <figcaption>
+                <h3>Marc</h3>
+                <p>온갖 무용한 것들에 대한 덕질 선호, 타고난 아싸, 알 수 없는 또라이, 일코하는 덕후</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/4.png' %}" />
+              <figcaption>
+                <h3>Jane</h3>
+                <p>호기심이 많으면서도 동시에 겁이 많은건 제희랑 똑 닮은 우리 Jane</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/5.png' %}" />
+              <figcaption>
+                <h3>좋아하는 것</h3>
+                <p>클래식과 공연, 덕수궁을 필두로 모든 궁전, 잔잔하고 조용하고 평안한 모든 객체/물체/인격체/피사체, 한옥, 한식, 동물(고양이, 말, 뱀, 새), 치킨과 떡볶이를 중심으로 한 맛있는 것, 꽃다발, 향수, 인테리어, 빈티지, 능소화, 음악, 게임, 유투브, 포켓몬, 수다와 쇼핑, 원피스와 여름, 검정과 파랑</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/6.png' %}" />
+              <span class="media-icon" title="by Film Camera"></span>
+              <figcaption>
+                <h3>Contax T2</h3>
+                <p>여전히 필름의 아날로그함을 사랑하는 그녀</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/7.png' %}" />
+              <figcaption>
+                <h3>불꽃놀이</h3>
+                <p>불꽃놀이를 처음 본다는 그녀에게 미안했던 한여름의 한강</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/29.png' %}" />
+              <figcaption>
+                <h3>겨울여행</h3>
+                <p>시키는대로 하면 인생샷 탄생</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/8.png' %}" />
+              <figcaption>
+                <h3>스티커사진(일본)</h3>
+                <p>지금 봐도 충격적인 최초이자 마지막으로 같이 찍은 스티커사진</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/19.png' %}" />
+              <figcaption>
+                <h3>포켓몬</h3>
+                <p>포켓몬고하러 속초 가봤다가 둘 모두 속초러버가 되어서 돌아옴.
+                  영하 10도에도 포켓몬 잡으려고 굳이 나가던 그녀란...</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/31.png' %}" />
+              <figcaption>
+                <h3>좋아하는 것</h3>
+                <p>모든 Text와 Context, 게임(PC&Mobile), 영화, 유투브, 아이돌, 만화, 음악, B급문화, 쇼핑, 전자기기, 카메라, 애플, 커피, 술, 멍때리기, 광합성, 여행, 동물</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/9.png' %}" />
+              <figcaption>
+                <h3>비눗방울</h3>
+                <p>비눗방울 하나로 즐겁던 제주의 초여름</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/10.png' %}" />
+              <figcaption>
+                <h3>사진의 정석</h3>
+                <p>휴대폰으로도 이 정도는 찍어줘야지? 라던 그녀</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/20.png' %}" />
+              <figcaption>
+                <h3>Hongkong</h3>
+                <p>너무나 즐거웠던 홍콩여행</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/11.png' %}" />
+              <figcaption>
+                <h3>연례행사</h3>
+                <p>기념일이나 좋은 날마다 같이 즐기는 주옥의 만찬</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/26.png' %}" />
+              <figcaption>
+                <h3>자랑</h3>
+                <p>제희 曰: 이 사진 한장이면 자기는 남들에게 부러움 살껄?</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/12.png' %}" />
+              <span class="media-icon" title="by Film Camera"></span>
+              <figcaption>
+                <h3>벚꽃</h3>
+                <p>소원이던 벚꽃지던 일본 여행, 벚꽃지던 숙소</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/13.png' %}" />
+              <span class="media-icon" title="by Film Camera"></span>
+              <figcaption>
+                <h3>여름</h3>
+                <p>4계절 중 여름을 가장 좋아하신다네요</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/27.png' %}" />
+              <span class="media-icon" title="by Film Camera"></span>
+              <figcaption>
+                <h3>개화기 신사</h3>
+                <p>제희는 언제나 말합니다. 개화기 시대 사람처럼 입으라고...</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/14.png' %}" />
+              <figcaption>
+                <h3>게임</h3>
+                <p>같이 게임을 할 수 있다니!!</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/15.png' %}" />
+              <figcaption>
+                <h3>캠핑</h3>
+                <p>결혼하면 꼭 제대로 된 캠핑가자</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/22.png' %}" />
+              <figcaption>
+                <h3>USJ</h3>
+                <p>해리포터 덕후의 소원 푼 날 (하지만 해리포터 버터 맥주는...으흠...)</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/16.png' %}" />
+              <span class="media-icon" title="by Film Camera"></span>
+              <figcaption>
+                <h3>필카</h3>
+                <p>그녀의 사진은 놀라워서, 저도 이렇게 만들어 줍니다</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/21.png' %}" />
+              <figcaption>
+                <h3>공기는 다르지만...</h3>
+                <p>179-158=21</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/28.png' %}" />
+              <span class="media-icon" title="by Film Camera"></span>
+              <figcaption>
+                <h3>다른 사람</h3>
+                <p>저이지만 저이지 않은 절 만들어내는 그녀</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/23.png' %}" />
+              <figcaption>
+                <h3>고양이 덕후</h3>
+                <p>고양이 없이 그간 어캐 살았나몰라...(나보다 고양이를 더 좋아하는 듯)</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/24.png' %}" />
+              <figcaption>
+                <h3>한(韓) 덕후</h3>
+                <p>한옥카페, 한옥호텔, 한정식 러버</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/25.png' %}" />
+              <figcaption>
+                <h3>커플샷</h3>
+                <p>나름 훈남훈녀 커플이었는데 이젠 한쪽만 훈녀</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/32.png' %}" />
+              <figcaption>
+                <h3>국수는 간단해</h3>
+                <p>요리에 젬병인 그녀를 위해 제가 요리도 시작했습니다. 근데 왜 설겆이도 내가...?</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/33.png' %}" />
+              <figcaption>
+                <h3>가끔은 귀여움도</h3>
+                <p>졸린채 새벽 비행기를 기다리던 그녀가 얼마나 귀엽던지</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/34.png' %}" />
+              <figcaption>
+                <h3>료칸</h3>
+                <p>둘 다 료칸을 너무 좋아해서 신혼여행을 일본으로 가도 좋겠다 싶었는데.... 이시국이라.... 이 곳은 아라시야마가 바로 보이던 란게츠</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/35.png' %}" />
+              <figcaption>
+                <h3>휴휴암</h3>
+                <p>나이를 먹고서도 항상 같이 가야할 곳</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="Rover">
+              <img src="{% static 'images/gallery/36.png' %}" />
+              <figcaption>
+                <h3>능소화</h3>
+                <p>제희가 가장 좋아하는 꽃이에요</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 푸터 영역 -->
+        <div class="p-footer">
+          <footer>
+            {% endblock main-block %}
+           
+            {% block footer %}
+          </footer>
+        </div>
+
+      </div>
+    </main>
+    {% endblock footer %}
+
+    {% block script-block %}
+    <script>
+      /* 롤오버 스크립트*/
+      $(".hover").mouseleave(
+        function () {
+          $(this).removeClass("hover");
+        }
+      );
+    </script>
+    {% endblock script-block %}

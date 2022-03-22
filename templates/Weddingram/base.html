@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>
+            {% block title %}
+            {% endblock title %}
+        </title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}" />
+        <!-- 스크립트 -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+        <script src="{% static 'js/script.js' %}"></script>
+        <!-- JQuery - 드래그 드롭 설정-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- 카카오톡 연결 -->
+        <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2FE8PWJBQQ"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2FE8PWJBQQ');
+        </script>
+        <!-- 공유 시 OG이미지 사용을 위한 태그 모음 -->
+        <meta property="og:type" content="website"> <!-- 공통 -->
+        <meta property="og:url" content="https://weddingram.kr"> <!-- 공통 -->
+        <meta property="og:title" content="Weddingram"> <!-- 공통 -->
+        <meta property="og:image" content="images/ogimage_normal.png"> <!-- 공통 | 절대값으로 입력 -->
+        <meta property="og:description" content="문창연, 송제희의 웨딩그램, 청첩장, 식장위치, 결혼날짜, 결혼식 장소"> <!-- 공통 -->
+        <meta property="og:site_name" content="웨딩그램">
+        <meta property="og:locale" content="utf-8">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta name="twitter:card" content="summary" /> <!-- 트위터 -->
+        <meta name="twitter:title" content="Weddingram" /> <!-- 트위터 -->
+        <meta name="twitter:description" content="문창연, 송제희의 웨딩그램, 청첩장, 식장위치, 결혼날짜, 결혼식 장소" /> <!-- 트위터 -->
+        <meta name="twitter:image" content="images/ogimage_normal.png " /> <!-- 트위터 -->
+        <meta name="twitter:site" content="@2dayer" />  <!-- 트위터 -->
+        <meta name="twitter:creator" content="@2dayer" /> <!-- 트위터 -->
+    </head>
+    <body>
+        <!-- 상단 네비게이션 -->
+        <nav>
+        <div class="fixed">
+            <div class="nav-content">
+            <a href="/main/"><img src="{% static 'images/weddingram-logo.png' %}" class="logo" alt=""/></a>
+            <div class="desktop-only">
+                {% block search-block %}
+                {% endblock search-block %}
+            </div>
+            <div class="nav-items">
+                {% block homemenu %}
+                {% endblock homemenu %}
+                <a href="{% url 'content:location' %}" title="찾아오시는 길"><img src="{% static 'images/svg/explore.svg' %}" class="explore" alt=""></a>
+                <a href="http://kko.to/fvqgBk7gK"><img src="{% static 'images/svg/liked.svg' %}" class="likes" alt=""></a>
+                <a href="{% url 'content:profile' %}"><img src="{% static 'images/weddingram_profile.png' %}" class="user-profile" alt=""></a>
+            </div>
+            </div>
+        </div>
+        <div class="mock"></div>
+        </nav>
+        <!-- 상단 네비게이션 끝 -->
+        {% block main-block %}
+        {% endblock main-block %}
+                <p>
+                    <a href="{% url 'content:about' %}" class="fa" title="웨딩그램에 대하여">소개</a> ∙
+                    <a href="{% url 'content:weddingvows' %}" class="fa" title="혼인서약서">약관</a> ∙
+                    <a href="https://naver.me/GfaMZNkI" class="fa" target="_blank" title="식장 지도">맵</a> ∙
+                    <a href="{% url 'content:copyright' %}" class="fa" title="저작권">저작권</a> ∙
+                    <a href="https://www.youtube.com/channel/UC5lqMuY2QALPu4xWKJnFHjQ" class="fa" target="_blank" title="유튜브 바로가기">유튜브</a>
+                    <br><br>
+                    <strong>© 2022 WEDDINGRAM FROM MARC</strong>
+                </p>
+
+        {% block footer %}
+        {% endblock footer %}
+
+        {% block modal-block %}
+        {% endblock modal-block %}
+
+        {% block script-block %}
+        {% endblock script-block %}
+
+        <!-- 팔로워 팝업 -->
+        <div id="popupfr">
+            <div id="popup-f">
+                <div class="header-f">
+                    <div class="leftf"></div>
+                    <div class="centerf"><h2>팔로워</h2></div>
+                    <div class="rightf"><img src="{% static 'images/svg/close.svg' %}" class="close"></div>
+                </div>
+                <div class="mpop-fr">
+                    <span>🤵👰‍♀️</span><br>축하해 주신 분들 모두가 팔로워입니다.<br>앞으로 함께 걸어갈 저희 커플을 계속 팔로우해주세요 :)
+                </div>
+            </div>
+        </div>
+
+        <!-- 팔로우 팝업 -->
+        <div id="popupf">
+            <div id="popup-f">
+                <div class="header-f">
+                    <div class="leftf"></div>
+                    <div class="centerf"><h2>팔로우</h2></div>
+                    <div class="rightf"><img src="{% static 'images/svg/close.svg' %}" class="close"></div>
+                </div>
+                <div class="mpop-f">
+                    <div>
+                        <div class="profile-card">
+                            <div class="image2">
+                                <img src="{% static 'images/marcngine.jpg' %}" title="marcngine님의 프로필사진">
+                            </div>
+                            <div class="center2">
+                                <p class="username">marcngine</p>
+                                <p class="sub-text2">Marc</p>
+                            </div>
+                            <div class="right"><button class="action-btn"><a href="https://www.instagram.com/marcngine/" target="_blank">방문</a></button></div>
+                         </div>
+                    </div>
+                    <div>
+                        <div class="profile-card">
+                            <div class="image2">
+                                <img src="{% static 'images/your_jane.jpeg' %}" title="_your_jane님의 프로필사진">
+                            </div>
+                            <div class="center2">
+                                <p class="username">_your_jane</p>
+                                <p class="sub-text2">희</p>
+                            </div>
+                            <div class="right"><button class="action-btn"><a href="https://www.instagram.com/_your_jane/" target="_blank">방문</a></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 팔로우팝업 끝 -->
+    </body>
+</html>

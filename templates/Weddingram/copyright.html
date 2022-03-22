@@ -1,0 +1,135 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block title %}
+    Instagram
+{% endblock title %}
+
+{% block search-block %}
+<div class="search-guide">
+  <span class="search-icon"></span>
+  <input type="text" class="search-placeholder" value="검색" onfocus="if (this.value == '검색') {this.value = '';}" onblur="if (this.value == '') {this.value = '검색';}">
+</div>
+{% endblock search-block %}
+
+{% block homemenu %}
+<a href="/main/"><img src="{% static 'images/svg/home.svg' %}" id="ad_fd" class="postc" alt=""></a>
+{% endblock homemenu %}
+
+{% block main-block %}
+    <main>
+      <div class="main-sub">
+        <header>
+          <div class="header-grid">
+            <div class="profile-pic">
+              <img src="{% static './images/weddingram_profile.png' %}" />
+            </div>
+            <div class="profile-info">
+              <div class="title">
+                <h2>Weddingram</h2>
+                <span class="verified-icon"></span>
+                <button class="primary">verified</button>
+              </div>
+              <div class="desktop-only">
+                <div class="details">
+                  <ul>
+                    <li>게시물 <span>42</span></li>
+                    <li class="openPopupFollower">팔로워 <span>6.11m</span></li>
+                    <li class="openPopupFollow">팔로우 <span>2</span></li>
+                  </ul>
+                </div>
+                <div class="description row last">
+                  <h1>WEDDINGRAM 🤵👰‍♀️</h1>
+                  <span>
+                    🗓️ 2022년 6월 11일, 🕛 12시 정각<br>
+                    📌 의정부 서계종택 <a href="http://naver.me/GfaMZNkI" class="pd" target="_blank">naver.me/GfaMZNkI</a>
+                  </span>
+                  <div class="pds"><a href="https://www.instagram.com/marcngine/" target="_blank" style="color: #000;font-weight:500;">marcngine</a>님과
+                     <a href="https://www.instagram.com/_your_jane/" target="_blank" style="color: #000;font-weight:500;">_your_jane</a>님이 팔로우합니다.</div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 프로필 설명 영역 모바일 화면 -->
+          <div class="profile-info mobile-only">
+            <div class="description row">
+                <h1>WEDDINGRAM 🤵👰‍♀️</h1>
+                  <span>
+                    🗓️ 2022년 6월 11일, 🕛 12시 정각<br>
+                    📌 의정부 서계종택 <a href="http://naver.me/GfaMZNkI" class="pd" target="_blank">naver.me/GfaMZNkI</a>
+                  </span>
+                  <div class="pds"><a href="https://www.instagram.com/marcngine/" target="_blank" style="color: #000;font-weight:500;">marcngine</a>님과
+                     <a href="https://www.instagram.com/_your_jane/" target="_blank" style="color: #000;font-weight:500;">_your_jane</a>님이 팔로우합니다.</div>
+                </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- 프로필 갤러리 -->
+        <div class="b_contents">
+            <h1>저작권 정보</h1>
+            <dl>
+                <!-- 영상음악 -->
+                <dt>음악</dt>
+                    <dd><br><span>모든 곡들은 <a href="https://www.findcopyright.or.kr/" target="_blank">한국저작권위원회의 저작권비즈니스지원센터</a>를 통해 정식으로 이용계약을 맺고 사용하였습니다.</span><br><br></dd>
+                    <dd><span>Ennio Morricone - Love Affair(End Title), Love Affair OST</span></dd>
+                    <dd>
+                      <p style="margin:5px 15px;">프로포즈 영상에 쓰인 ennio morricone 가 작곡한 1994년 워렌 비티와 아네트 베닝 주연, <span>러브 어페어(Love Affair)의 엔딩 크래딧</span>입니다.<br>
+                        진짜 이 앨범은 버릴 곡 하나 없는 앨범이라 너무나 애정하는 앨범이에요.<br>
+                        영상의 메인 테마 곡으로 이루마의 Destiny of Love와 엄청나게 고민했습니다.
+                        'Destiny of Love'는 우리 러브 스토리의 메인 테마라 생각하던 곡이라서요. 
+                        다만 영상을 처음 만들어야겠다고 생각했을 때부터 머리 속에서 그린 시나리오와 영상의 흐름상 이 곡이 더 잘 어울린다고 생각해서 결국 이 곡으로 낙찰!</p>
+                    <br><br>
+                    </dd>
+                    <dd><span>Yiruma - Destiny of Love</span></dd>
+                    <dd>
+                      <p style="margin:5px 15px;">위에도 적었지만 <span>저희 커플의 테마곡</span>이라고 생각하는 곡이에요.<br>
+                        아쉽게도 영상에는 쓰이지 못했지만 대신 웹사이트 배경음악은 이 곡으로!
+                        제 결혼식 입장곡도 이 곡일 가능성이 가장 높아요.</p>
+                    <br><br>
+                    </dd>
+                    <!-- 해외음악 -->
+                <dt>해외음악</dt>
+                    <dd><br><span><a href="https://spitz-web.com" class="pd" target="_blank">Spitz</a>의 소속사 글라스호퍼의 법무부에 확인하였고, 개인사용 범위로 간주되어 사용해도 괜찮다는 회신을 받았습니다.</span><br>
+                        <figure style="text-align: center;">
+                        <img src="{% static 'images/spitz.png' %}" style="height:300px;margin-top:10px;">
+                        <figcaption style="color:rgba(200, 200, 200);font-size:11px;text-align: center;">글라스호퍼 법무팀에서도 문제없다고!</figcaption>
+                      </figure>
+                        <br></dd>
+                    <dd><span>Spitz - 君が思い出になる前に</span></dd>
+                    <dd>
+                        <p style="margin:5px 15px;">제작후기 영상에 쓰인 Spitz의 1993년 곡입니다. 
+                        <span>'당신이 추억이 되기 전에'</span> 라는 타이틀이 프로포즈와 어울리진 않지만 개인적으로 오랜동안 좋아했던 곡이고, Spitz 곡 중에서도 제일 좋아하는 곡이라 꼭 어디엔가는 쓰고 싶었어요.</p>
+                    <br><br></dd>
+                    <!-- 폰트 -->
+                  <dt>폰트</dt>
+                    <dd><br><span>Weddingram 로고에 쓰인 폰트는 Grandista 폰트로 <a href="https://www.myfonts.com" target="_blank" class="pd">myfonts.com</a>에서 정식으로 구매하였습니다.<br>
+                        기타 이미지나 영상의 캘리그래피는 직접 그린 이미지입니다.</span><br><br></dd>
+                    <dd><span>Grandista</span></dd>
+                    <dd>
+                        <p style="margin:5px 15px;">인스타그램 로고 서체로 검색해보면 대부분 기존 로고<font class="grey">(2013년 이전)</font>는 <span>Billabong</span>에 가깝고, 최신 로고는 <span>Blue Vinyl</span> 과 유사하다고 알려줍니다<font class="grey">(해외 사이트에서도)</font>
+                        그런데 제가 보기엔 영어 소문자 <span>r</span> 이나 <span>i</span>의 쉐이프가 아무리 봐도 둘 다 아닌 것 같아서 고민 중이었는데 외국의 한 커뮤니티에서 'Grandista'라는 폰트가 비슷하다는 글을 보고 테스트해보니 이게 제일 비슷한 것 같더라구요.</p>
+                    <br>
+                    <figure style="text-align: center;">
+                      <img src="{% static 'images/gallery/font_style.png' %}" style="height:250px;" title="서체 비교">
+                      <figcaption style="color:rgba(200, 200, 200);font-size:11px;text-align: center;">서체비교</figcaption>
+                    </figure>
+                    <br>
+                    </dd>
+                    </dd>
+                    
+            </dl>
+        </div>
+
+        <!-- 푸터 영역 -->
+        <div class="p-footer">
+          <footer>
+            {% endblock main-block %}
+            {% block footer %}
+          </footer>
+        </div>
+
+      </div>
+    </main>
+    {% endblock footer %}

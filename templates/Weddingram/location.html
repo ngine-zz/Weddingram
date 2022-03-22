@@ -1,0 +1,117 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block title %}
+    Instagram
+{% endblock title %}
+
+{% block search-block %}
+<div class="search-guide">
+  <span class="search-icon"></span>
+  <input type="text" class="search-placeholder" value="검색" onfocus="if (this.value == '검색') {this.value = '';}" onblur="if (this.value == '') {this.value = '검색';}">
+</div>
+{% endblock search-block %}
+
+{% block homemenu %}
+<a href="/main/"><img src="{% static 'images/svg/home.svg' %}" id="ad_fd" class="postc" alt=""></a>
+{% endblock homemenu %}
+
+{% block main-block %}
+    <main>
+      <div class="main-sub">
+        <header>
+          <div class="header-grid">
+            <div class="profile-pic">
+              <img src="{% static './images/weddingram_profile.png' %}" />
+            </div>
+            <div class="profile-info">
+              <div class="title">
+                <h2>Weddingram</h2>
+                <span class="verified-icon"></span>
+                <button class="primary">verified</button>
+              </div>
+              <div class="desktop-only">
+                <div class="details">
+                  <ul>
+                    <li>게시물 <span>42</span></li>
+                    <li class="openPopupFollower">팔로워 <span>6.11m</span></li>
+                    <li class="openPopupFollow">팔로우 <span>2</span></li>
+                  </ul>
+                </div>
+                <div class="description row last">
+                    <h1>WEDDINGRAM 🤵👰‍♀️</h1>
+                  <span>
+                    🗓️ 2022년 6월 11일, 🕛 12시 정각<br>
+                    📌 의정부 서계종택 <a href="http://naver.me/GfaMZNkI" class="pd" target="_blank">naver.me/GfaMZNkI</a>
+                  </span>
+                  <div class="pds"><a href="https://www.instagram.com/marcngine/" target="_blank" style="color: #000;font-weight:500;">marcngine</a>님과
+                     <a href="https://www.instagram.com/_your_jane/" target="_blank" style="color: #000;font-weight:500;">_your_jane</a>님이 팔로우합니다.</div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 프로필 설명 영역 모바일 화면 -->
+          <div class="profile-info mobile-only">
+            <div class="description row">
+              <h1>WEDDINGRAM 🤵👰‍♀️</h1>
+                  <span>
+                    🗓️ 2022년 6월 11일, 🕛 12시 정각<br>
+                    📌 의정부 서계종택 <a href="http://naver.me/GfaMZNkI" class="pd" target="_blank">naver.me/GfaMZNkI</a>
+                  </span>
+                  <div class="pds"><a href="https://www.instagram.com/marcngine/" target="_blank" style="color: #000;font-weight:500;">marcngine</a>님과
+                     <a href="https://www.instagram.com/_your_jane/" target="_blank" style="color: #000;font-weight:500;">_your_jane</a>님이 팔로우합니다.</div>
+                </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- 프로필 갤러리 -->
+        <div class="b_contents">
+            <h1>찾아오시는 길</h1>
+            <div style="padding: 10px;display: flex;justify-content: center;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.834677825299!2d127.05516890083287!3d37.70008147412715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb8bb8e76a679%3A0xe0337c7f39f2f999!2z7ISc6rOE67CV7IS464u56rOg7YOd!5e0!3m2!1sko!2skr!4v1647099177208!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <dl>
+                <!-- 멥 -->
+                <dt>Location</dt>
+                    <dd><br><span>서계박세당선생고택(서계종택)</span></dd>
+                    <dd>
+                      경기 의정부시 동일로128번길 36<br>
+                      <a href="https://www.instagram.com/koreahanok/" target="_blank">https://www.instagram.com/koreahanok/</a>
+                    <br><br><br>
+                    </dd>
+                  <dt>찾아오시는 길</dt>
+                    <dd><br><span>자가용 이용 시</span></dd>
+                    <dd>
+                      <p style="margin-top:15px;">
+                        - 장암역 교차로를 지나서 이디야 커피(의정부장암역점) 직전 골목으로 진입<br>
+                        - 주차 안내 요원 대기 예정 (약 150대 주차 가능) 
+                    </p>
+                    </dd>
+                    <dd><br><span>대중교통 이용 시</span></dd>
+                    <dd>
+                      <p style="margin-top:15px;">
+                        - <button class="s92">7호선</button> 장암역 1번출구에서 300M<br>
+                        - <button class="b65">간선</button> 111번, 
+                        <button class="b64">지선</button> 1154번, 
+                        <button class="b4e">일반</button> 72-1번, 12-5번 
+                        <button class="beb">직행</button> 8409번 탑승<br>
+                        - <span>장암역.석림사입구 정류장</span>(08325, 61052) 하차 후 150M
+                    </p>
+                    </dd>
+                
+            </dl>
+        </div>
+
+        <!-- 푸터 영역 -->
+        <div class="p-footer">
+          <footer>
+            {% endblock main-block %}
+            {% block footer %}
+          </footer>
+        </div>
+
+      </div>
+    </main>
+    {% endblock footer %}
