@@ -1280,7 +1280,7 @@ figure.Rover.hover i {
   opacity: 1;
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 600px) {
     figure .mfig{
         text-align: center;
         width: 400px;
