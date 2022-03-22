@@ -1184,6 +1184,12 @@ footer a {
     cursor:pointer;
 }
 
+ figure .mfig{
+        text-align: center;
+        width: 600px;
+        margin-top: 10px;
+}
+
 /* 프로필 롤오버효과 */
 figure.Rover {
   position: relative;
@@ -1272,4 +1278,12 @@ figure.Rover.hover i {
   -webkit-transform: translate(0px, 0px);
   transform: translate(0px, 0px);
   opacity: 1;
+}
+
+@media only screen and (max-width: 735px) {
+    figure .mfig{
+        text-align: center;
+        width: 400px;
+        margin-top: 10px;
+}
 }
