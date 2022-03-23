@@ -31,6 +31,8 @@ ALLOWED_HOSTS = [
     ".weddingram.kr",
 ]
 
+# ALLOWED_HOSTS = []
+
 
 # Application definition
 

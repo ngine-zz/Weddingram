@@ -13,15 +13,16 @@
 .index-top .fixed {
   width: 100%;
   height: 100%;
+    padding: 15px 15px 0 15px;
   align-items: center; /* 수직 정렬 */
   flex-direction: row; /* default: row */
   justify-content: center; /* flex direction에 대해서 정렬방식 선택 */
   z-index: 1;
-  padding:20px 0;
   background: linear-gradient(55deg, #48b1bf 3%, #74ebd5 20%, #acb6e6 40%, #ff7b89 90%, #fd6474);
 }
 .index-top .module {
-  max-width: 400px;
+  width: 100%;
+    max-width: 400px;
   height: 100%;
   background-color: white;
   margin:0 auto;
@@ -42,12 +43,13 @@
   max-width: 100%;
 }
 .index-top .boxing {
-  background-color: #ffffff;
+    height:100%;
   margin-left: 10px;
-  padding: 10px 10px 50px 10px;
+  padding: 10px 10px 150px 10px;
 }
 .index-top .boxing p {
   margin: 10px ;
+     height:100%;
 }
 .btnb {
   width: 100%;
@@ -215,25 +217,25 @@ nav .logo {
 .messenger{
     height: 100%;
     cursor: pointer;
-    margin: 0 0 1px 18px;
+    margin: 0 0 1px 15px;
     display: inline-block;
 }
 .play{
   height: 24px;
   cursor: pointer;
-  margin: 0 0 1px 18px;
+  margin: 0 0 1px 15px;
   display: inline-block;
 }
 .explore{
     height: 100%;
     cursor: pointer;
-    margin: 0 0 1px 19px;
+    margin: 0 0 1px 15px;
     display: inline-block;
 }
 .likes{
     height: 100%;
     cursor: pointer;
-    margin: 2px 0 1px 18px;
+    margin: 2px 0 1px 15px;
     display: inline-block;
 }
 /* 네비게이션 프로필 */
@@ -245,7 +247,7 @@ nav .logo {
     background-size: cover;
     overflow: hidden;
     display: inline-block;
-    margin: 0 0 0 18px;
+    margin: 0 0 0 15px;
 }
 /* 화면이 줄어들 경우 네비게이션 양 옆에 공간주기 */
 @media only screen and (max-width: 935px) {
@@ -254,6 +256,15 @@ nav .logo {
   }
 }
 .nav-items{
+    overflow: hidden;
+}
+@media only screen and (max-width: 605px) {
+  .nav-content {
+    padding: 0 20px;
+  }
+}
+.nav-items{
+    text-align: right;
     overflow: hidden;
 }
 nav .fixed {
@@ -1012,6 +1023,8 @@ footer a {
     }
     footer{
         display: flex;
+        justify-content: center;
+        text-align: center;
     }
 }
 
@@ -1185,8 +1198,25 @@ footer a {
 
 .mfig{
         text-align: center;
-        width: 600px;
+        max-height: 400px;
         margin-top: 10px;
+}
+.mfig2{
+        text-align: center;
+        max-height: 300px;
+        margin-top: 10px;
+}
+@media only screen and (max-width: 735px) {
+    .mfig{
+        text-align: center;
+        max-height: 300px;
+        margin-top: 10px;
+}
+    .mfig2{
+        text-align: center;
+        max-height: 180px;
+        margin-top: 10px;
+}
 }
 
 /* 프로필 롤오버효과 */
@@ -1277,12 +1307,4 @@ figure.Rover.hover i {
   -webkit-transform: translate(0px, 0px);
   transform: translate(0px, 0px);
   opacity: 1;
-}
-
-@media only screen and (max-width: 735px) {
-    .mfig{
-        text-align: center;
-        height: 60%;
-        margin-top: 10px;
-}
 }
