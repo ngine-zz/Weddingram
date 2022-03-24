@@ -36,7 +36,7 @@
                                 <div class="profile-pic2" onclick="location.href='{% url 'content:location' %}'"><img src="{% static 'images/map.png' %}" alt=""></div>
                                 <p class="s_username">찾아오시는 길</p>
                             </div>
-                            <div class="status-card">
+                            <div class="status-card" onclick="javascript:void(0);" id="btn">
                                 <div class="profile-pic2-off"/><img src="{% static 'images/share.png' %}" alt=""></div>
                                 <p class="s_username">카카오톡</br>공유하기</p>
                             </div>
@@ -468,4 +468,16 @@
             });
         }
         </script>
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+         <script>
+            Kakao.init('34a42f89b6f3be1ac249349e26a2ea1f'); //6번 항목에서 발급 받았던 javascript key를 여기에 넣는다.
+
+         $("#btn").click(function(e) { //jquery를 사용한다 가정
+          e.preventDefault();   //이벤트 버블링 prevent
+
+          Kakao.Link.sendCustom({
+            templateId: 72730   // 15번 항목에서 확인하였던 이벤트번호 등록
+          });
+         });
+          </script>
         {% endblock script-block %}

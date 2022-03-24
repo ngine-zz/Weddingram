@@ -1261,12 +1261,12 @@ figure.Rover .links {
 figure.Rover h3 {
   line-height: 1.1em;
   font-weight: 700;
-  font-size: 1.5vw;
+  font-size: 2vw;
   text-transform: uppercase;
   opacity: 0;
 }
 figure.Rover p {
-  font-size: 1vw;
+  font-size: 1.5vw;
   font-weight: 300;
   letter-spacing: 1px;
   opacity: 0;
@@ -1307,4 +1307,40 @@ figure.Rover.hover i {
   -webkit-transform: translate(0px, 0px);
   transform: translate(0px, 0px);
   opacity: 1;
+}
+
+@media only screen and (max-width: 735px) {
+    figure.Rover {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      color: #ffffff;
+      font-size: 2vw;
+      text-align: center;
+      background-color: #000000;
+    }
+    figure.Rover:after,
+    figure.Rover figcaption {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    figure.Rover h3 {
+      line-height: 1.1em;
+      font-weight: 700;
+      font-size: 4vw;
+      text-transform: uppercase;
+      opacity: 0;
+    }
+    figure.Rover p {
+      font-size: 3vw;
+      font-weight: 300;
+      letter-spacing: 1px;
+      opacity: 0;
+      top: 50%;
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
 }
