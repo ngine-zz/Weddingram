@@ -78,4 +78,3 @@ class UploadReply(APIView):
         Reply.objects.create(feed_id=feed_id, writer_id=writer_id, comment=comment)
 
         return Response(status=200)
-

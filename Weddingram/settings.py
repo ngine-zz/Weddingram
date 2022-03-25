@@ -26,12 +26,12 @@ SECRET_KEY = 'django-insecure-7+#06=g(98allsocfz9l64=yl#2^lej$q#jt+$vkya0j8#_z)e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    ".ap-northeast-2.compute.amazonaws.com",
-    ".weddingram.kr",
-]
+# ALLOWED_HOSTS = [
+#   ".ap-northeast-2.compute.amazonaws.com",
+#    ".weddingram.kr",
+# ]
 
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -63,8 +63,7 @@ ROOT_URLCONF = 'Weddingram.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,7 +125,7 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static') ]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 
 
