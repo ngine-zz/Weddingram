@@ -524,6 +524,12 @@ header {
     line-height:1.5;
 }
 @media only screen and (max-width: 735px) {
+  .weddingvows {
+      font-size: 2.6vw;
+      line-height:1.5;
+  }
+}
+@media only screen and (max-width: 735px) {
   .b_contents {
     margin: 20px;
     padding: 10px;
