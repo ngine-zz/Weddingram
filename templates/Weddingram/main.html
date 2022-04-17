@@ -6,7 +6,11 @@
 {% endblock title %}
 
 {% block search-block %}
-<audio src="{% static '/images/DestinyOfLove.m4a' %}" class="audio" controls autoplay loop />
+<!--audio src="{% static '/images/DestinyOfLove.m4a' %}" class="audio" controls autoplay loop /-->
+<div class="search-guide">
+  <span class="search-icon"></span>
+  <input type="text" class="search-placeholder" value="검색" onfocus="if (this.value == '검색') {this.value = '';}" onblur="if (this.value == '') {this.value = '검색';}">
+</div>
 {% endblock search-block %}
 
 {% block homemenu %}
