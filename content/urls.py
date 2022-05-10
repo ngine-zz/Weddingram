@@ -8,6 +8,7 @@ app_name = 'content'
 urlpatterns= [
     path('profile/', views.profile, name='profile'),
     path('about/', views.about, name='about'),
+    path('account/', views.account, name='account'),
     path('copyright/', views.copyright, name='copyright'),
     path('weddingvows/', views.weddingvows, name='weddingvows'),
     path('location/', views.location, name='location'),

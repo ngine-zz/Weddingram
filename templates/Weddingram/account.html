@@ -1,0 +1,94 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block title %}
+    Weddingram
+{% endblock title %}
+
+{% block search-block %}
+<div class="search-guide">
+  <span class="search-icon"></span>
+  <input type="text" class="search-placeholder" value="검색" onfocus="if (this.value == '검색') {this.value = '';}" onblur="if (this.value == '') {this.value = '검색';}">
+</div>
+{% endblock search-block %}
+
+{% block homemenu %}
+<!--a href="/main/"><img src="{% static 'images/svg/home.svg' %}" id="ad_fd" class="postc" alt=""></a-->
+{% endblock homemenu %}
+
+{% block main-block %}
+    <main>
+      <div class="main-sub">
+        <header>
+          <div class="header-grid">
+            <div class="profile-pic">
+              <img src="{% static './images/weddingram_profile.png' %}" />
+            </div>
+            <div class="profile-info">
+              <div class="title">
+                <h2>Weddingram</h2>
+                <span class="verified-icon"></span>
+                <button class="primary">verified</button>
+              </div>
+              <div class="desktop-only">
+                <div class="details">
+                  <ul>
+                    <li>게시물 <span>42</span></li>
+                    <li class="openPopupFollower">팔로워 <span>6.11m</span></li>
+                    <li class="openPopupFollow">팔로우 <span>2</span></li>
+                  </ul>
+                </div>
+                <div class="description row last">
+                    <h1>WEDDINGRAM 🤵👰‍♀️</h1>
+                  <span>
+                    🗓️ 2022년 6월 11일, 🕛 12시 정각<br>
+                    📌 의정부 서계종택 <a href="http://naver.me/GfaMZNkI" class="pd" target="_blank">naver.me/GfaMZNkI</a>
+                  </span>
+                  <div class="pds"><a href="https://www.instagram.com/marcngine/" target="_blank" style="color: #000;font-weight:500;">marcngine</a>님과
+                     <a href="https://www.instagram.com/_your_jane/" target="_blank" style="color: #000;font-weight:500;">_your_jane</a>님이 팔로우합니다.</div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 프로필 설명 영역 모바일 화면 -->
+          <div class="profile-info mobile-only">
+            <div class="description row">
+              <h1>WEDDINGRAM 🤵👰‍♀️</h1>
+                  <span>
+                    🗓️ 2022년 6월 11일, 🕛 12시 정각<br>
+                    📌 의정부 서계종택 <a href="http://naver.me/GfaMZNkI" class="pd" target="_blank">naver.me/GfaMZNkI</a>
+                  </span>
+                  <div class="pds"><a href="https://www.instagram.com/marcngine/" target="_blank" style="color: #000;font-weight:500;">marcngine</a>님과
+                     <a href="https://www.instagram.com/_your_jane/" target="_blank" style="color: #000;font-weight:500;">_your_jane</a>님이 팔로우합니다.</div>
+                </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- 프로필 갤러리 -->
+        <div class="b_contents">
+            <h1>계좌안내</h1>
+            <dl>
+                <!-- 멥 -->
+                <dt>신랑 측</dt>
+                    <dd><br>문창연 : <span>국민은행 : 754210450238</span><br>
+                            문상우(혼주) : <span>대구은행 : 074080252034</span><br><br></dd>
+
+                <dt>신부 측</dt>
+                    <dd><br>송제희 : <span>국민은행 : 91033546776</span></dd>
+
+            </dl>
+        </div>
+
+        <!-- 푸터 영역 -->
+        <div class="p-footer">
+          <footer>
+            {% endblock main-block %}
+            {% block footer %}
+          </footer>
+        </div>
+
+      </div>
+    </main>
+    {% endblock footer %}

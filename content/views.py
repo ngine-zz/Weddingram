@@ -13,6 +13,9 @@ def about(request):
 def copyright(request):
     return render(request, 'Weddingram/copyright.html')
 
+def account(request):
+    return render(request, 'Weddingram/account.html')
+
 def weddingvows(request):
     return render(request, 'Weddingram/weddingvows.html')
 
