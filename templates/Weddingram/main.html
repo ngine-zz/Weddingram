@@ -60,18 +60,95 @@
                         </div>
                         <!-- 스토리 끝 -->
 
-                        <!-- 상단 공지 포스트 시작 -->
+                        <!-- 스냅사진 캐러셀 -->
                         <div class="post">
-                            <!--div class="info">
+                            <div class="info">
                                 <div class="user">
                                     <div class="profile-pic2"><img src="{% static 'images/weddingram_profile.png' %}" style="image-rendering: -webkit-optimize-contrast;" alt=""></div>
                                     <p class="feed_username">Weddingram</p>
                                 </div>
                                 <div class="openPopup"><img src="{% static './images/svg/options.svg' %}" alt=""></div>
-                            </div-->
+                            </div>
+
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                  <img src="{% static 'images/snap/1.jpeg' %}" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                  <img src="{% static 'images/snap/2.jpg' %}" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                  <img src="{% static 'images/snap/3.jpg' %}" class="d-block w-100" alt="...">
+                                </div>
+                                  <div class="carousel-item" data-bs-interval="3000">
+                                  <img src="{% static 'images/snap/4.jpg' %}" class="d-block w-100" alt="...">
+                                </div>
+                                  <div class="carousel-item" data-bs-interval="3000">
+                                  <img src="{% static 'images/snap/5.jpg' %}" class="d-block w-100" alt="...">
+                                </div>
+                                  <div class="carousel-item" data-bs-interval="3000">
+                                  <img src="{% static 'images/snap/6.jpg' %}" class="d-block w-100" alt="...">
+                                </div>
+                                  <div class="carousel-item" data-bs-interval="3000">
+                                  <img src="{% static 'images/snap/7.jpg' %}" class="d-block w-100" alt="...">
+                                </div>
+                                  <div class="carousel-item" data-bs-interval="3000">
+                                  <img src="{% static 'images/snap/8.jpg' %}" class="d-block w-100" alt="...">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+
+                            <div class="post-content">
+                                <div class="reaction-wrapper">
+                                    <img src="{% static 'images/svg/like.svg' %}" class="icon" alt="">
+                                    <img src="{% static 'images/svg/comments.svg' %}" class="icon" alt="">
+                                    <img src="{% static 'images/svg/messenger.svg' %}" class="icon" alt="">
+                                    <img src="{% static 'images/svg/saved.svg' %}" class="save icon" alt="">
+                                </div>
+                                <p class="likes">
+                                <div class="comment-wrapper">
+                                    <div class="profile-pic2"><img src="{% static 'images/your_jane.jpeg' %}" style="image-rendering: -webkit-optimize-contrast;" alt=""></div>
+                                    <div class="subtrack"><span>_your_jane</span>님 <span>외 여러 명</span>이 좋아합니다</div>
+                                </div>
+                                </p>
+                                <p class="description">비바람을 맞으며 뒤늦게 찍은 제주도 스냅사진들<br>(부제:비오는 제주도를 조심하십시오...)</p>
+                                <p class="tag">#웨딩그램 #weddingram #스냅 #제주도 #어색어색</p>
+                                <p class="post-time">2022.05.26</p>
+                            </div>
+                        </div>
+                        <!-- 스냅사진 캐러셀 -->
+
+                        <!-- 상단 공지 포스트 시작 -->
+                        <div class="post">
+                            <div class="info">
+                                <div class="user">
+                                    <div class="profile-pic2"><img src="{% static 'images/weddingram_profile.png' %}" style="image-rendering: -webkit-optimize-contrast;" alt=""></div>
+                                    <p class="feed_username">Weddingram</p>
+                                </div>
+                                <div class="openPopup"><img src="{% static './images/svg/options.svg' %}" alt=""></div>
+                            </div>
                             <a href="https://www.youtube.com/embed/1sPOksD7GPc" target="_blank"><img src="{% static 'images/youtube_go.png' %}" class="post-image" alt=""></a>
                             <div class="post-content">
-                                <!--div class="reaction-wrapper">
+                                <div class="reaction-wrapper">
                                     <img src="{% static 'images/svg/like.svg' %}" class="icon" alt="">
                                     <img src="{% static 'images/svg/comments.svg' %}" class="icon" alt="">
                                     <img src="{% static 'images/svg/messenger.svg' %}" class="icon" alt="">
@@ -82,13 +159,14 @@
                                     <div class="profile-pic2"><img src="{% static 'images/marcngine.jpg' %}" style="image-rendering: -webkit-optimize-contrast;" alt=""></div>
                                     <div class="subtrack"><span>marcngine</span>님 <span>외 여러 명</span>이 좋아합니다</div>
                                 </div>
-                                </p-->
-                                <p class="description">직접 만든 프로포즈 애니메이션 영상입니다.<br>
+                                </p>
+                                <p class="description">영상편집도 처음, 성인되고 그림을 그려본 것도 처음이지만,<br>
+                                    정성을 담아 직접 만든 프로포즈 애니메이션 영상입니다.<br>
                                     한 번도 만난 적 없이, 10년을 그저 닉네임만 알고 지내던 블로그 이웃이 연인이 되고, 7년간의 연애 끝에 부부가 되기까지를 그린 저희 이야기예요 :)<br><br>
-                                    저작권 문제로 유튜브에서만 확인 가능합니다~ 위의 이미지를 클릭하거나 <a href="https://www.youtube.com/embed/1sPOksD7GPc" target="_blank">여기</a>를 눌러주세요.
+                                    음원 저작권 문제로 유튜브에서만 확인 가능합니다~ 위의 이미지를 클릭하거나 <a href="https://www.youtube.com/embed/1sPOksD7GPc" target="_blank">여기</a>를 눌러주세요.
                                 </p>
                                 <p class="tag">#웨딩그램 #weddingram #movie #프로포즈 #프로포즈영상</p>
-                                <!--p class="post-time">2022.04.13</p-->
+                                <p class="post-time">2022.04.13</p>
                             </div>
                         </div>
                         <!-- 상단 공지 포스트 끝 -->
